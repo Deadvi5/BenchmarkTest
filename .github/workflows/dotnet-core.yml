@@ -24,3 +24,4 @@ jobs:
     - name: Test
       run: dotnet run --no-restore --verbosity normal --configuration Release
     - name: Continuous Benchmark (.NET)
+      uses: actions/checkout@v2
