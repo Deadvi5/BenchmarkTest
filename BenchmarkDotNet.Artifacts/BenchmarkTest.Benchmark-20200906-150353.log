@@ -1,0 +1,75 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in /home/pitu/Documenti/Projects/BenchmarkTest/BenchmarkTest/bin/Release/netcoreapp3.1/5d43c718-4e1b-4401-820b-e037cb0d1b13
+// command took 1,6s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in /home/pitu/Documenti/Projects/BenchmarkTest/BenchmarkTest/bin/Release/netcoreapp3.1/5d43c718-4e1b-4401-820b-e037cb0d1b13
+// command took 2,48s and exited with 0
+// ***** Done, took 00:00:04 (4.18 sec)   *****
+// Found 2 benchmarks:
+//   Benchmark.Serialize: DefaultJob
+//   Benchmark.BuildString: DefaultJob
+
+// **************************
+// Benchmark: Benchmark.Serialize: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "5d43c718-4e1b-4401-820b-e037cb0d1b13.dll" --benchmarkName "BenchmarkTest.Benchmark.Serialize" --job "Default" --benchmarkId 0 in /home/pitu/Documenti/Projects/BenchmarkTest/BenchmarkTest/bin/Release/netcoreapp3.1/5d43c718-4e1b-4401-820b-e037cb0d1b13/bin/Release/netcoreapp3.1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.7 (CoreCLR 4.700.20.36602, CoreFX 4.700.20.37001), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 308705.00 ns, 308.7050 us/op
+WorkloadJitting  1: 1 op, 14748836.00 ns, 14.7488 ms/op
+
+OverheadJitting  2: 16 op, 333734.00 ns, 20.8584 us/op
+WorkloadJitting  2: 16 op, 593316.00 ns, 37.0823 us/op
+
+WorkloadPilot    1: 16 op, 115091.00 ns, 7.1932 us/op
+WorkloadPilot    2: 32 op, 270720.00 ns, 8.4600 us/op
+WorkloadPilot    3: 64 op, 408755.00 ns, 6.3868 us/op
+WorkloadPilot    4: 128 op, 806108.00 ns, 6.2977 us/op
+WorkloadPilot    5: 256 op, 1816664.00 ns, 7.0963 us/op
+WorkloadPilot    6: 512 op, 3214617.00 ns, 6.2785 us/op
+WorkloadPilot    7: 1024 op, 6723692.00 ns, 6.5661 us/op
+WorkloadPilot    8: 2048 op, 15504195.00 ns, 7.5704 us/op
+WorkloadPilot    9: 4096 op, 26984558.00 ns, 6.5880 us/op
+WorkloadPilot   10: 8192 op, 54104140.00 ns, 6.6045 us/op
+WorkloadPilot   11: 16384 op, 82995211.00 ns, 5.0656 us/op
+WorkloadPilot   12: 32768 op, 136248660.00 ns, 4.1580 us/op
+WorkloadPilot   13: 65536 op, 182849019.00 ns, 2.7901 us/op
+WorkloadPilot   14: 131072 op, 322186133.00 ns, 2.4581 us/op
+WorkloadPilot   15: 262144 op, 671557855.00 ns, 2.5618 us/op
+
+OverheadWarmup   1: 262144 op, 600649.00 ns, 2.2913 ns/op
+OverheadWarmup   2: 262144 op, 565699.00 ns, 2.1580 ns/op
+OverheadWarmup   3: 262144 op, 558763.00 ns, 2.1315 ns/op
+OverheadWarmup   4: 262144 op, 543182.00 ns, 2.0721 ns/op
+OverheadWarmup   5: 262144 op, 561515.00 ns, 2.1420 ns/op
+OverheadWarmup   6: 262144 op, 553057.00 ns, 2.1097 ns/op
+OverheadWarmup   7: 262144 op, 559355.00 ns, 2.1338 ns/op
+OverheadWarmup   8: 262144 op, 598257.00 ns, 2.2822 ns/op
+OverheadWarmup   9: 262144 op, 563157.00 ns, 2.1483 ns/op
+
+OverheadActual   1: 262144 op, 564830.00 ns, 2.1547 ns/op
+OverheadActual   2: 262144 op, 548994.00 ns, 2.0942 ns/op
+OverheadActual   3: 262144 op, 546716.00 ns, 2.0856 ns/op
+OverheadActual   4: 262144 op, 558925.00 ns, 2.1321 ns/op
+OverheadActual   5: 262144 op, 569166.00 ns, 2.1712 ns/op
+OverheadActual   6: 262144 op, 588056.00 ns, 2.2433 ns/op
+OverheadActual   7: 262144 op, 558898.00 ns, 2.1320 ns/op
+OverheadActual   8: 262144 op, 591103.00 ns, 2.2549 ns/op
+OverheadActual   9: 262144 op, 575364.00 ns, 2.1948 ns/op
+OverheadActual  10: 262144 op, 718505.00 ns, 2.7409 ns/op
+OverheadActual  11: 262144 op, 962042.00 ns, 3.6699 ns/op
+OverheadActual  12: 262144 op, 761413.00 ns, 2.9046 ns/op
+OverheadActual  13: 262144 op, 674853.00 ns, 2.5744 ns/op
+OverheadActual  14: 262144 op, 592562.00 ns, 2.2604 ns/op
+OverheadActual  15: 262144 op, 627729.00 ns, 2.3946 ns/op
+OverheadActual  16: 262144 op, 651811.00 ns, 2.4865 ns/op
+OverheadActual  17: 262144 op, 558716.00 ns, 2.1313 ns/op
+OverheadActual  18: 262144 op, 558757.00 ns, 2.1315 ns/op
