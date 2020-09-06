@@ -10,10 +10,6 @@ namespace BenchmarkTest
         private readonly IInfoParser serializer = new SerializerInfoParser();
         private readonly IInfoParser stringBuilder = new StringInfoParser();
 
-        public Benchmark()
-        {
-        }
-
         [Benchmark]
         public void Serialize()
         {
