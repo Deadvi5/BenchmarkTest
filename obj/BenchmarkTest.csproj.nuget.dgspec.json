@@ -10,11 +10,11 @@
         "projectUniqueName": "/home/pitu/Documenti/Projects/BenchmarkTest/BenchmarkTest/BenchmarkTest.csproj",
         "projectName": "BenchmarkTest",
         "projectPath": "/home/pitu/Documenti/Projects/BenchmarkTest/BenchmarkTest/BenchmarkTest.csproj",
-        "packagesPath": "/root/.nuget/packages/",
+        "packagesPath": "/home/pitu/.nuget/packages/",
         "outputPath": "/home/pitu/Documenti/Projects/BenchmarkTest/BenchmarkTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/home/pitu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
